@@ -74,8 +74,7 @@ about.html
 
 Download or clone the repository:
 
-git clone https://github.com/yourusername/travel-website.git
-
+git clone https://github.com/mininion/Tour-Travel-Website.git
 
 Open the folder
 
