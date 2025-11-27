@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body {
+  color: #333;
+  line-height: 1.6;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 10%;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+    background-color:  #8cade7bb;
+    align-items: center;
+    z-index: 100;
+    font-family: 'poppins', sans-serif;
+}
+.logo {
+    font-size: 40px;
+    scale: (1.5);
+    color: #372516;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+    color: rgb(2, 50, 19);
+}
+nav a {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-left: 5rem;
+    padding-top: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    position: relative;
+}
+nav a:hover,
+nav a.active {
+  border-color: #7bdb81;
+  color: #fafafa;
+}
+.destinations {
+  text-align: center;
+  font-family: 'poppins', sans-serif;
+}
+.destinations h1 {
+  padding: 120px 0 15px;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  color: #c29525;
+}
+.destinations p {
+  font-size: 2.2rem;
+  color: #6f6a6a;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px 60px 10px;
+  justify-items: center; 
+}
+.card {
+  width: 320px;
+  height: 420px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+.card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.card h2 {
+  font-size: 18px;
+  margin: 15px;
+  color: #333;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.cta {
+  margin-left: 3%;
+  padding: 20px 20px;
+  color: #372516;
+  font-family: 'Times New Roman', Times, serif;
+}
+.cta p {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3.5rem;
+    background: #1b456a;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-weight: 600;
+    border: 2px solid #010000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: rgb(93, 124, 124);
+    box-shadow: 0 0 25px rgba(183, 199, 214, 0.973);
+    color: #ffffff;
+}
+footer {
+    text-align: center;
+    padding: 5px 0;
+    color: #fffefe;
+    background: #1b1b1b;
+    border-top: 1px solid #372516;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
